@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras"/>
+			<item value="C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\cadastro"/>
 			<item value="C:\Users\Noite\Documents\Compras"/>
 		</list>
 		<list key="projectNameTemplate">

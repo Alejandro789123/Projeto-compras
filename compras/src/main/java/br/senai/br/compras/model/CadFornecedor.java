@@ -40,9 +40,10 @@ public class CadFornecedor {
 	@Column(name = "telefone")
 	private Long telefone;
 	
-	private String cpf_Cnpj;
+	@Column(name = "cpf_Cnpj")
+	private String cpf_Cnpj; // Cpf OU Cnpj
 	
-	//Documento 
+	@Column(name = "tipoPessoa") // Pode ser Pessoa fisica ou Juridica
 	private String tipoPessoa;
 	
 	

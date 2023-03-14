@@ -11,7 +11,7 @@ public class Service {
 	LoginDAO dao;
 	
 	public void listarTodos() {
-		dao.ListarTodos()
+		dao.ListarTodos();
 	}
 
 }
