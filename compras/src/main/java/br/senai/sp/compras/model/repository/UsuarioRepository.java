@@ -6,4 +6,5 @@ import br.senai.br.compras.model.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
+	boolean existsByEmail(String email);
 }

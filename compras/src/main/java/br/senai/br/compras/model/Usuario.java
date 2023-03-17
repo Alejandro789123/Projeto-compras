@@ -11,6 +11,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
 import lombok.Builder;
 import lombok.Data;
 
@@ -29,9 +31,11 @@ public class Usuario {
 	private String nome;
 	
 	@Column(name = "email")
+	@Email
 	private String email;
 	
 	@Column(name = "senha")
+	@Size(min = 8, max = 16)
 	private String senha;
 	
 	@Column(name = "perfil")
