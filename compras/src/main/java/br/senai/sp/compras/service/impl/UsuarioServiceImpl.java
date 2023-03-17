@@ -1,10 +1,14 @@
 package br.senai.sp.compras.service.impl;
 
+import org.springframework.stereotype.Service;
+
 import br.senai.br.compras.model.Usuario;
+import br.senai.sp.compras.exception.RegraNegocioException;
 import br.senai.sp.compras.model.repository.UsuarioRepository;
 import br.senai.sp.compras.service.UsuarioService;
 
-public class UsuarioServiceImpl  implements UsuarioService{
+@Service
+public class UsuarioServiceImpl implements UsuarioService{
 
 	private UsuarioRepository repository;
 	
@@ -27,8 +31,9 @@ public class UsuarioServiceImpl  implements UsuarioService{
 
 	@Override
 	public void validarEmail(String email) {
-		// TODO Auto-generated method stub
-		
+		boolean existe = repository.existsByEmail(email);
+		if(existe) {
+			throw new RegraNegocioException("Ja existe um usuario cadastrado com este email.");
+		}
 	}
-
 }

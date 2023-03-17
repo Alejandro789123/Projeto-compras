@@ -1,7 +1,5 @@
 package br.senai.br.compras.model;
 
-import java.util.Objects;
-
 import br.senai.sp.compras.model.enums.Perfil;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -15,11 +13,11 @@ import lombok.Builder;
 import lombok.Data;
 
 @Entity
-@Data
-@Builder
 @Table( name = "Usuario")
+@Builder
+@Data
 public class Usuario {
-	
+
 	@Id 
 	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,6 +35,5 @@ public class Usuario {
 	@Column(name = "perfil")
 	@Enumerated(value = EnumType.STRING)
 	private Perfil perfil;
-	
-	
+
 }
