@@ -1,6 +1,6 @@
 package br.senai.sp.compras.service;
 
-import br.senai.br.compras.model.Usuario;
+import br.senai.sp.compras.model.entity.Usuario;
 
 public interface UsuarioService {
 

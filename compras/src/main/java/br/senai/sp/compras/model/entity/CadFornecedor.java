@@ -1,4 +1,4 @@
-package br.senai.br.compras.model;
+package br.senai.sp.compras.model.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

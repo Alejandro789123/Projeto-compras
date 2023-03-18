@@ -1,208 +1,80 @@
-2023-03-17 15:57:09,241 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
-2023-03-17 15:57:40,055 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:cadastro:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\cadastro\pom.xml.
-2023-03-17 15:57:45,020 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/main/java
-2023-03-17 15:57:45,021 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
-2023-03-17 15:57:45,030 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
-2023-03-17 15:57:45,040 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/test/java
-2023-03-17 15:57:50,346 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 15 sec
-2023-03-17 15:57:57,965 [Worker-4: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
-2023-03-17 15:57:59,681 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
-2023-03-17 15:57:59,682 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
-2023-03-17 15:57:59,691 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
-2023-03-17 15:57:59,700 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
-2023-03-17 15:58:01,704 [Worker-4: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
-2023-03-17 16:02:20,843 [Worker-5: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
-2023-03-17 16:02:40,746 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:02:40,747 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:02:40,754 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:02:46,887 [Worker-8: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
-2023-03-17 16:02:50,884 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 16:02:51,180 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:02:51,186 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:02:53,239 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 16:02:53,242 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:02:53,246 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:03:04,563 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:03:04,564 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:03:04,568 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:26:45,138 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 16:26:47,039 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:26:47,045 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:28:43,279 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 16:28:46,770 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:28:46,775 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:29:43,743 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 16:29:44,974 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:29:44,982 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:31:06,119 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 16:31:06,127 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:31:06,133 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:33:52,462 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 16:33:53,431 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:33:53,435 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:37:25,942 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:37:25,942 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:37:25,946 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:41:22,222 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:41:22,225 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:41:22,229 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:46:25,613 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:46:25,614 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:46:25,714 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:51:11,476 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:51:11,476 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:51:11,482 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:51:34,793 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:51:34,794 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:51:34,871 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:52:49,918 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:52:49,919 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:52:49,926 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 16:55:22,303 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:55:22,304 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 16:55:22,309 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 17:01:04,184 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 17:01:04,233 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 17:01:04,238 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 17:04:05,283 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 17:04:05,283 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 17:04:05,289 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 17:06:14,778 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 17:06:14,927 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 17:06:14,932 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 17:08:42,906 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 17:08:43,252 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 17:08:43,273 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 17:11:37,831 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
-2023-03-17 17:11:38,336 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
-2023-03-17 17:11:38,340 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
-2023-03-17 17:16:31,099 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
-2023-03-17 17:16:46,987 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.workspace.cli_0.3.1 [617])
-2023-03-17 17:16:47,195 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.workspace.cli_0.3.1.jar
-2023-03-17 17:16:53,650 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/0.3.1/org.eclipse.m2e.workspace.cli-0.3.1-sources.jar
-2023-03-17 17:16:53,712 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/0.3.1/org.eclipse.m2e.workspace.cli-0.3.1-sources.jar
-2023-03-17 17:16:53,719 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149 [605])
-2023-03-17 17:16:53,772 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149
-2023-03-17 17:16:53,806 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\aether-connector-okhttp-0.17.8.jar
-2023-03-17 17:16:53,826 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-cli-1.4.jar
-2023-03-17 17:16:53,827 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-io-2.6.jar
-2023-03-17 17:16:53,839 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-lang3-3.8.1.jar
-2023-03-17 17:16:53,840 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\guice-4.2.2-no_aop.jar
-2023-03-17 17:16:53,840 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\jansi-2.4.0.jar
-2023-03-17 17:16:53,862 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-artifact-3.8.6.jar
-2023-03-17 17:16:53,876 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-builder-support-3.8.6.jar
-2023-03-17 17:16:53,891 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-compat-3.8.6.jar
-2023-03-17 17:16:53,894 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-core-3.8.6.jar
-2023-03-17 17:16:53,901 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-embedder-3.8.6.jar
-2023-03-17 17:16:53,910 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-3.8.6.jar
-2023-03-17 17:16:53,923 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-builder-3.8.6.jar
-2023-03-17 17:16:53,924 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-plugin-api-3.8.6.jar
-2023-03-17 17:16:53,955 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-repository-metadata-3.8.6.jar
-2023-03-17 17:16:54,013 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-api-1.6.3.jar
-2023-03-17 17:16:54,013 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-connector-basic-1.6.3.jar
-2023-03-17 17:16:54,034 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-impl-1.6.3.jar
-2023-03-17 17:16:54,065 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-provider-3.8.6.jar
-2023-03-17 17:16:54,098 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-spi-1.6.3.jar
-2023-03-17 17:16:54,119 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-transport-wagon-1.6.3.jar
-2023-03-17 17:16:54,145 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-util-1.6.3.jar
-2023-03-17 17:16:54,153 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-3.8.6.jar
-2023-03-17 17:16:54,153 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-builder-3.8.6.jar
-2023-03-17 17:16:54,163 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-shared-utils-3.3.4.jar
-2023-03-17 17:16:54,195 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okhttp-3.14.1.jar
-2023-03-17 17:16:54,206 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okio-1.17.3.jar
-2023-03-17 17:16:54,223 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.inject-0.3.5.jar
-2023-03-17 17:16:54,223 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.plexus-0.3.5.jar
-2023-03-17 17:16:54,236 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-build-api-0.0.7.jar
-2023-03-17 17:16:54,254 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-cipher-2.0.jar
-2023-03-17 17:16:54,286 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar
-2023-03-17 17:16:54,322 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-component-annotations-2.1.0.jar
-2023-03-17 17:16:54,337 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-interpolation-1.26.jar
-2023-03-17 17:16:54,339 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-sec-dispatcher-2.0.jar
-2023-03-17 17:16:54,341 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-utils-3.3.1.jar
-2023-03-17 17:16:54,346 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-file-3.5.1.jar
-2023-03-17 17:16:54,347 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-provider-api-3.5.1.jar
-2023-03-17 17:16:54,401 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_30.1.0.v20221112-0806 [10])
-2023-03-17 17:16:54,472 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\com.google.guava_30.1.0.v20221112-0806.jar
-2023-03-17 17:16:54,472 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [917])
-2023-03-17 17:16:54,526 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\slf4j.api_1.7.36.jar
-2023-03-17 17:16:54,526 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [32])
-2023-03-17 17:16:54,635 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\javax.inject_1.0.0.v20220405-0441.jar
-2023-03-17 17:16:54,635 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221112-0806 [30])
-2023-03-17 17:16:54,670 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\javax.annotation_1.3.5.v20221112-0806.jar
-2023-03-17 17:16:54,812 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0-sources.jar
-2023-03-17 17:16:54,938 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0-sources.jar
-2023-03-17 17:16:55,536 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/takari/aether/aether-connector-okhttp/0.17.8/aether-connector-okhttp-0.17.8-sources.jar
-2023-03-17 17:16:55,564 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/takari/aether/aether-connector-okhttp/0.17.8/aether-connector-okhttp-0.17.8-sources.jar
-2023-03-17 17:16:55,647 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4-sources.jar
-2023-03-17 17:16:55,726 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4-sources.jar
-2023-03-17 17:16:55,922 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6-sources.jar
-2023-03-17 17:16:56,013 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6-sources.jar
-2023-03-17 17:16:56,129 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1-sources.jar
-2023-03-17 17:16:56,282 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1-sources.jar
-2023-03-17 17:16:56,474 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.4.0/jansi-2.4.0-sources.jar
-2023-03-17 17:16:56,628 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/2.4.0/jansi-2.4.0-sources.jar
-2023-03-17 17:16:56,753 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.8.6/maven-artifact-3.8.6-sources.jar
-2023-03-17 17:16:56,921 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.8.6/maven-artifact-3.8.6-sources.jar
-2023-03-17 17:16:57,024 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.8.6/maven-builder-support-3.8.6-sources.jar
-2023-03-17 17:16:57,238 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.8.6/maven-builder-support-3.8.6-sources.jar
-2023-03-17 17:16:57,508 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.8.6/maven-compat-3.8.6-sources.jar
-2023-03-17 17:16:57,677 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.8.6/maven-compat-3.8.6-sources.jar
-2023-03-17 17:16:57,796 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.8.6/maven-core-3.8.6-sources.jar
-2023-03-17 17:16:57,912 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.8.6/maven-core-3.8.6-sources.jar
-2023-03-17 17:16:58,085 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.8.6/maven-embedder-3.8.6-sources.jar
-2023-03-17 17:16:58,273 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.8.6/maven-embedder-3.8.6-sources.jar
-2023-03-17 17:16:58,462 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.8.6/maven-model-3.8.6-sources.jar
-2023-03-17 17:16:58,607 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.8.6/maven-model-3.8.6-sources.jar
-2023-03-17 17:16:58,717 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.8.6/maven-model-builder-3.8.6-sources.jar
-2023-03-17 17:16:58,849 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.8.6/maven-model-builder-3.8.6-sources.jar
-2023-03-17 17:16:59,095 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.8.6/maven-plugin-api-3.8.6-sources.jar
-2023-03-17 17:16:59,338 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.8.6/maven-plugin-api-3.8.6-sources.jar
-2023-03-17 17:16:59,453 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.8.6/maven-repository-metadata-3.8.6-sources.jar
-2023-03-17 17:16:59,595 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.8.6/maven-repository-metadata-3.8.6-sources.jar
-2023-03-17 17:16:59,686 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.6.3/maven-resolver-api-1.6.3-sources.jar
-2023-03-17 17:16:59,752 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.6.3/maven-resolver-api-1.6.3-sources.jar
-2023-03-17 17:16:59,836 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-connector-basic/1.6.3/maven-resolver-connector-basic-1.6.3-sources.jar
-2023-03-17 17:17:00,050 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-connector-basic/1.6.3/maven-resolver-connector-basic-1.6.3-sources.jar
-2023-03-17 17:17:00,169 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.6.3/maven-resolver-impl-1.6.3-sources.jar
-2023-03-17 17:17:00,542 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.6.3/maven-resolver-impl-1.6.3-sources.jar
-2023-03-17 17:17:00,796 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.8.6/maven-resolver-provider-3.8.6-sources.jar
-2023-03-17 17:17:00,900 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.8.6/maven-resolver-provider-3.8.6-sources.jar
-2023-03-17 17:17:01,007 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.6.3/maven-resolver-spi-1.6.3-sources.jar
-2023-03-17 17:17:01,189 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.6.3/maven-resolver-spi-1.6.3-sources.jar
-2023-03-17 17:17:01,303 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-transport-wagon/1.6.3/maven-resolver-transport-wagon-1.6.3-sources.jar
-2023-03-17 17:17:01,403 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-transport-wagon/1.6.3/maven-resolver-transport-wagon-1.6.3-sources.jar
-2023-03-17 17:17:01,499 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.6.3/maven-resolver-util-1.6.3-sources.jar
-2023-03-17 17:17:01,638 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.6.3/maven-resolver-util-1.6.3-sources.jar
-2023-03-17 17:17:01,758 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.8.6/maven-settings-3.8.6-sources.jar
-2023-03-17 17:17:01,837 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.8.6/maven-settings-3.8.6-sources.jar
-2023-03-17 17:17:01,927 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.8.6/maven-settings-builder-3.8.6-sources.jar
-2023-03-17 17:17:02,009 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.8.6/maven-settings-builder-3.8.6-sources.jar
-2023-03-17 17:17:02,173 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4-sources.jar
-2023-03-17 17:17:02,370 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4-sources.jar
-2023-03-17 17:17:02,583 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/3.14.1/okhttp-3.14.1-sources.jar
-2023-03-17 17:17:02,690 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp/3.14.1/okhttp-3.14.1-sources.jar
-2023-03-17 17:17:02,840 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/squareup/okio/okio/1.17.3/okio-1.17.3-sources.jar
-2023-03-17 17:17:02,915 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/squareup/okio/okio/1.17.3/okio-1.17.3-sources.jar
-2023-03-17 17:17:03,303 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0-sources.jar
-2023-03-17 17:17:03,439 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0-sources.jar
-2023-03-17 17:17:03,573 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0-sources.jar
-2023-03-17 17:17:03,722 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0-sources.jar
-2023-03-17 17:17:03,961 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26-sources.jar
-2023-03-17 17:17:04,085 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26-sources.jar
-2023-03-17 17:17:04,370 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0-sources.jar
-2023-03-17 17:17:04,440 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0-sources.jar
-2023-03-17 17:17:04,642 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.1/plexus-utils-3.3.1-sources.jar
-2023-03-17 17:17:04,843 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.3.1/plexus-utils-3.3.1-sources.jar
-2023-03-17 17:17:05,094 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/3.5.1/wagon-file-3.5.1-sources.jar
-2023-03-17 17:17:05,281 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/3.5.1/wagon-file-3.5.1-sources.jar
-2023-03-17 17:17:05,371 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/3.5.1/wagon-provider-api-3.5.1-sources.jar
-2023-03-17 17:17:05,465 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/3.5.1/wagon-provider-api-3.5.1-sources.jar
-2023-03-17 17:17:05,727 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-slf4j-provider/3.8.6/maven-slf4j-provider-3.8.6-sources.jar
-2023-03-17 17:17:05,924 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-slf4j-provider/3.8.6/maven-slf4j-provider-3.8.6-sources.jar
-2023-03-17 17:17:44,688 [Worker-48: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2023-03-17 17:17:50,823 [Worker-48: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
-2023-03-17 17:18:01,810 [Worker-48: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
-2023-03-17 17:18:01,811 [Worker-48: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
-2023-03-17 17:18:01,811 [Worker-48: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
-2023-03-17 17:18:01,812 [Worker-48: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
-2023-03-17 17:18:05,385 [Worker-48: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 16,00 sec, update config takes 0,00 sec 
+2023-03-17 19:38:31,911 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-17 19:39:02,346 [Worker-18: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:cadastro:0.0.1-SNAPSHOT @ C:\Users\Noite\Desktop\Projeto-compras\cadastro\pom.xml.
+2023-03-17 19:39:03,820 [Worker-18: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/main/java
+2023-03-17 19:39:03,820 [Worker-18: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
+2023-03-17 19:39:03,841 [Worker-18: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
+2023-03-17 19:39:03,850 [Worker-18: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/test/java
+2023-03-17 19:39:05,189 [Worker-18: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 5 sec
+2023-03-17 19:39:10,891 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\Noite\Desktop\Projeto-compras\compras\pom.xml.
+2023-03-17 19:39:11,640 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom
+2023-03-17 19:39:11,681 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom
+2023-03-17 19:39:11,724 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+2023-03-17 19:39:11,809 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+2023-03-17 19:39:12,014 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-17 19:39:12,014 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-17 19:39:12,018 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-17 19:39:12,022 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-17 19:39:12,267 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2023-03-17 19:39:13,038 [Worker-14: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar
+2023-03-17 19:39:13,199 [Worker-14: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar
+2023-03-17 19:39:13,201 [Worker-14: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for junit:junit:4.13.2
+2023-03-17 19:41:39,941 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-17 19:42:34,053 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-17 19:42:34,072 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:42:34,077 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 19:43:58,386 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:43:58,387 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:43:58,391 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 19:44:32,348 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:44:32,349 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:44:32,353 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 19:49:38,069 [Worker-6: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:49:38,069 [Worker-6: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:49:38,072 [Worker-6: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 19:50:39,246 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-17 19:50:39,251 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:50:39,253 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 19:52:41,378 [Worker-5: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:52:41,378 [Worker-5: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:52:41,382 [Worker-5: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 19:54:00,621 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:54:00,622 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:54:00,626 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 19:55:31,988 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:55:31,989 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 19:55:32,005 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:03:04,294 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:03:04,294 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:03:04,297 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:08:03,822 [Worker-10: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\Noite\Desktop\Projeto-compras\compras\pom.xml.
+2023-03-17 20:08:04,341 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:08:04,341 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:08:04,347 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:08:05,622 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-17 20:08:05,640 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:08:05,642 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:08:20,924 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-17 20:08:21,091 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\Noite\Desktop\Projeto-compras\compras\pom.xml.
+2023-03-17 20:08:21,547 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-17 20:08:21,548 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-17 20:08:21,548 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-17 20:08:21,549 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-17 20:08:21,775 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2023-03-17 20:08:40,573 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\Noite\Desktop\Projeto-compras\compras\pom.xml.
+2023-03-17 20:08:40,931 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:08:40,931 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:08:40,934 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:08:42,164 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-17 20:08:42,180 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:08:42,182 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:09:27,898 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:09:27,898 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:09:27,900 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:09:40,137 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-17 20:09:40,144 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 20:09:40,148 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-17 20:09:51,104 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-17 20:11:44,386 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-17 21:00:01,342 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-17 21:00:01,373 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-17 21:00:01,380 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\cadastro\src\test\resources
