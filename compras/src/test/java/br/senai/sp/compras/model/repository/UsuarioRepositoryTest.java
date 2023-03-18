@@ -17,7 +17,7 @@ public class UsuarioRepositoryTest {
 	
 	@Test
 	public void deveVerificarAExistenciaDeUmEmail() {
-		Usuario.builder().nome("usuario").email("usuario@easyconsys.com").build();
+		Usuario usuario = Usuario.builder().nome("usuario").email("usuario@easyconsys.com").build();
 		
 		
 		
