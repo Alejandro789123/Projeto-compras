@@ -1,7 +1,12 @@
 package br.senai.sp.compras.service.impl;
 
-import org.springframework.stereotype.Service;
+import java.util.Optional;
 
+import org.springframework.boot.web.error.ErrorAttributeOptions;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import br.senai.sp.compras.exception.ErroAutenticacao;
 import br.senai.sp.compras.exception.RegraNegocioException;
 import br.senai.sp.compras.model.entity.Usuario;
 import br.senai.sp.compras.model.repository.UsuarioRepository;
@@ -10,23 +15,31 @@ import br.senai.sp.compras.service.UsuarioService;
 @Service
 public class UsuarioServiceImpl implements UsuarioService{
 
-	private UsuarioRepository repository;
+	private UsuarioRepository  repository;
 	
 	public UsuarioServiceImpl(UsuarioRepository repository) {
 		super();
 		this.repository = repository;
 	}
-
+ 
 	@Override
 	public Usuario autenticar(String email, String senha) {
-		// TODO Auto-generated method stub
-		return null;
+		 Optional<Usuario> usuario = repository.findByEmail(email);
+		
+		if (usuario.isPresent()) {
+			throw new ErroAutenticacao("Usuario não encontrado para o email informado.");
+		}
+		if (usuario.get().getSenha().equals(senha)) {
+			throw new ErroAutenticacao("Senha invalida");
+		}
+		 return usuario.get();
 	}
 
 	@Override
+	@Transactional
 	public Usuario salvarUsuario(Usuario usuario) {
-		// TODO Auto-generated method stub
-		return null;
+		validarEmail(usuario.getEmail());
+		return repository.save(usuario);
 	}
 
 	@Override

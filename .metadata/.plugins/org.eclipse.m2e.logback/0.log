@@ -172,3 +172,292 @@
 2023-03-23 22:16:33,691 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2023-03-23 22:16:33,703 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-03-23 22:16:33,708 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Noite\Desktop\Projeto-compras\compras\src\test\resources
+2023-03-24 20:59:59,572 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-24 21:00:32,376 [main] ERROR o.e.m2e.editor.pom.MavenPomEditor - Cannot determine URI for '/compras/pom.xml'.
+org.eclipse.ui.PartInitException: Cannot determine URI for '/compras/pom.xml'.
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3196)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3207)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:224)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:331)
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:203)
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:313)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addFallbackEditors(MavenPomEditor.java:360)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addPages(MavenPomEditor.java:336)
+	at org.eclipse.ui.forms.editor.FormEditor.createPages(FormEditor.java:143)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:333)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:960)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:330)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1384)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1334)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1181)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$3.close(StackRenderer.java:1041)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1961)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:337)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/compras/pom.xml'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:115)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:563)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4175)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1479)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:153)
+	at org.eclipse.ui.internal.genericeditor.ExtensionBasedTextEditor.doSetInput(ExtensionBasedTextEditor.java:86)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3165)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:434)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$7(WorkbenchWindow.java:2346)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2344)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3182)
+	... 81 common frames omitted
+2023-03-24 21:01:07,869 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:cadastro:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\cadastro\pom.xml.
+2023-03-24 21:01:40,951 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/main/java
+2023-03-24 21:01:40,953 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
+2023-03-24 21:01:40,954 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
+2023-03-24 21:01:40,955 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/test/java
+2023-03-24 21:01:42,917 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 43 sec
+2023-03-24 21:01:50,755 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:01:51,466 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:cadastro:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\cadastro\pom.xml.
+2023-03-24 21:01:52,743 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/main/java
+2023-03-24 21:01:52,743 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
+2023-03-24 21:01:52,744 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cadastro/src/main/resources
+2023-03-24 21:01:52,745 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cadastro/src/test/java
+2023-03-24 21:01:57,071 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2023-03-24 21:01:59,747 [Worker-11: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:02:19,209 [Worker-11: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:02:19,210 [Worker-11: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:02:19,211 [Worker-11: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:02:19,212 [Worker-11: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:02:19,844 [Worker-11: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 22 sec
+2023-03-24 21:02:20,687 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:02:21,262 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:02:24,173 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:02:24,174 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:02:24,175 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:02:24,177 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:02:25,186 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 3,00 sec, update config takes 0,00 sec 
+2023-03-24 21:10:59,964 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:11:11,337 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:11:11,338 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:11:11,345 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:17:38,389 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:17:40,714 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:17:46,495 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:17:46,496 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:17:46,497 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:17:46,498 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:17:48,244 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 7,00 sec, update config takes 1,00 sec 
+2023-03-24 21:21:20,313 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:21:20,739 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:21:21,979 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:21:21,979 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:21:21,980 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:21:21,981 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:21:22,947 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2023-03-24 21:23:51,535 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-24 21:25:59,503 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-24 21:25:59,577 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:25:59,583 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:26:43,431 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:26:43,432 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:26:43,441 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:29:29,159 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-24 21:29:29,166 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:29:29,172 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:29:50,645 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:29:50,645 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:29:50,652 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:32:13,678 [Worker-0: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:32:16,022 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:32:16,023 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:32:16,028 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:32:31,864 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2023-03-24 21:32:40,565 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.workspace.cli_0.3.1 [617])
+2023-03-24 21:32:40,610 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.workspace.cli_0.3.1.jar
+2023-03-24 21:32:40,636 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149 [605])
+2023-03-24 21:32:40,704 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149
+2023-03-24 21:32:40,705 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\aether-connector-okhttp-0.17.8.jar
+2023-03-24 21:32:40,705 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-cli-1.4.jar
+2023-03-24 21:32:40,706 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-io-2.6.jar
+2023-03-24 21:32:40,706 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-lang3-3.8.1.jar
+2023-03-24 21:32:40,706 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\guice-4.2.2-no_aop.jar
+2023-03-24 21:32:40,707 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\jansi-2.4.0.jar
+2023-03-24 21:32:40,707 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-artifact-3.8.6.jar
+2023-03-24 21:32:40,707 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-builder-support-3.8.6.jar
+2023-03-24 21:32:40,707 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-compat-3.8.6.jar
+2023-03-24 21:32:40,708 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-core-3.8.6.jar
+2023-03-24 21:32:40,708 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-embedder-3.8.6.jar
+2023-03-24 21:32:40,708 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-3.8.6.jar
+2023-03-24 21:32:40,709 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-builder-3.8.6.jar
+2023-03-24 21:32:40,709 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-plugin-api-3.8.6.jar
+2023-03-24 21:32:40,709 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-repository-metadata-3.8.6.jar
+2023-03-24 21:32:40,710 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-api-1.6.3.jar
+2023-03-24 21:32:40,710 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-connector-basic-1.6.3.jar
+2023-03-24 21:32:40,711 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-impl-1.6.3.jar
+2023-03-24 21:32:40,711 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-provider-3.8.6.jar
+2023-03-24 21:32:40,712 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-spi-1.6.3.jar
+2023-03-24 21:32:40,713 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-transport-wagon-1.6.3.jar
+2023-03-24 21:32:40,713 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-util-1.6.3.jar
+2023-03-24 21:32:40,713 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-3.8.6.jar
+2023-03-24 21:32:40,714 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-builder-3.8.6.jar
+2023-03-24 21:32:40,714 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-shared-utils-3.3.4.jar
+2023-03-24 21:32:40,714 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okhttp-3.14.1.jar
+2023-03-24 21:32:40,715 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okio-1.17.3.jar
+2023-03-24 21:32:40,715 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.inject-0.3.5.jar
+2023-03-24 21:32:40,715 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.plexus-0.3.5.jar
+2023-03-24 21:32:40,715 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-build-api-0.0.7.jar
+2023-03-24 21:32:40,716 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-cipher-2.0.jar
+2023-03-24 21:32:40,716 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar
+2023-03-24 21:32:40,716 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-component-annotations-2.1.0.jar
+2023-03-24 21:32:40,717 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-interpolation-1.26.jar
+2023-03-24 21:32:40,717 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-sec-dispatcher-2.0.jar
+2023-03-24 21:32:40,717 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-utils-3.3.1.jar
+2023-03-24 21:32:40,718 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-file-3.5.1.jar
+2023-03-24 21:32:40,718 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-provider-api-3.5.1.jar
+2023-03-24 21:32:40,720 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_30.1.0.v20221112-0806 [10])
+2023-03-24 21:32:40,746 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\com.google.guava_30.1.0.v20221112-0806.jar
+2023-03-24 21:32:40,746 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [917])
+2023-03-24 21:32:40,747 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\slf4j.api_1.7.36.jar
+2023-03-24 21:32:40,747 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [32])
+2023-03-24 21:32:40,749 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2023-03-24 21:32:40,749 [main] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221112-0806 [30])
+2023-03-24 21:32:40,799 [main] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\ivan aguilar\.p2\pool\plugins\javax.annotation_1.3.5.v20221112-0806.jar
+2023-03-24 21:35:26,294 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:35:26,887 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:35:29,150 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:35:29,151 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:35:29,152 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:35:29,154 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:35:30,942 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 2,00 sec, update config takes 1,00 sec 
+2023-03-24 21:36:14,612 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:36:15,034 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:36:16,031 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:36:16,031 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:36:16,032 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:36:16,033 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:36:16,747 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2023-03-24 21:39:17,652 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-24 21:56:46,897 [Worker-18: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:57:01,033 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-24 21:57:01,099 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:57:01,105 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:57:10,624 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-24 21:57:10,631 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 21:57:10,637 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 21:57:34,807 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:57:35,341 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:57:36,632 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:57:36,633 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:57:36,634 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:57:36,635 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:57:37,797 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2023-03-24 21:58:16,007 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 21:58:16,381 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 21:58:17,266 [Worker-21: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 21:58:17,267 [Worker-21: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:58:17,267 [Worker-21: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 21:58:17,268 [Worker-21: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 21:58:17,824 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2023-03-24 22:00:22,231 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-24 22:09:55,336 [Worker-18: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 22:10:10,970 [Worker-16: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/3.0.4/spring-boot-devtools-3.0.4-sources.jar
+2023-03-24 22:10:11,487 [Worker-16: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/3.0.4/spring-boot-devtools-3.0.4-sources.jar
+2023-03-24 22:10:11,496 [Worker-16: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-devtools:3.0.4
+2023-03-24 22:10:12,037 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-24 22:10:12,135 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 22:10:12,141 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 22:10:21,721 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-03-24 22:10:21,729 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 22:10:21,735 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 22:10:45,997 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 22:10:46,483 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 22:10:47,829 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 22:10:47,830 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 22:10:47,831 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 22:10:47,833 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 22:10:48,900 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2023-03-24 22:11:00,438 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 22:11:00,897 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 22:11:01,827 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 22:11:01,828 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 22:11:01,829 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 22:11:01,830 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 22:11:02,718 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2023-03-24 22:16:08,269 [Worker-22: Launching UsuarioRepositoryTest] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar
+2023-03-24 22:16:08,360 [Worker-22: Launching UsuarioRepositoryTest] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar
+2023-03-24 22:49:13,636 [Worker-30: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 22:49:39,953 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 22:49:39,954 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-03-24 22:49:39,959 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\src\test\resources
+2023-03-24 22:50:00,761 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-24 22:50:05,777 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.senai.sp:compras:0.0.1-SNAPSHOT @ C:\Users\ivan aguilar\Documents\PROJETO\Projeto-compras\compras\pom.xml.
+2023-03-24 22:50:06,982 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/main/java
+2023-03-24 22:50:06,983 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 22:50:06,984 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /compras/src/main/resources
+2023-03-24 22:50:06,985 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /compras/src/test/java
+2023-03-24 22:50:07,712 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 1,00 sec, refresh facades takes 4,00 sec, update config takes 0,00 sec 
