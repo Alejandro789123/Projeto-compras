@@ -22,17 +22,20 @@ public class UsuarioServiceImpl implements UsuarioService{
 		this.repository = repository;
 	}
  
+
 	@Override
 	public Usuario autenticar(String email, String senha) {
-		 Optional<Usuario> usuario = repository.findByEmail(email);
+		Optional<Usuario> usuario = repository.findByEmail(email);
 		
-		if (usuario.isPresent()) {
-			throw new ErroAutenticacao("Usuario não encontrado para o email informado.");
+		if(!usuario.isPresent()) {
+			throw new ErroAutenticacao("Usuário não encontrado para o email informado.");
 		}
-		if (usuario.get().getSenha().equals(senha)) {
-			throw new ErroAutenticacao("Senha invalida");
+	
+		if(!usuario.get().getSenha().equals(senha)) {
+			throw new ErroAutenticacao("Senha inválida.");
 		}
-		 return usuario.get();
+
+		return usuario.get();
 	}
 
 	@Override
@@ -46,7 +49,8 @@ public class UsuarioServiceImpl implements UsuarioService{
 	public void validarEmail(String email) {
 		boolean existe = repository.existsByEmail(email);
 		if(existe) {
-			throw new RegraNegocioException("Ja existe um usuario cadastrado com este email.");
+			throw new RegraNegocioException("Já existe um usuário cadastrado com este email.");
 		}
 	}
+
 }

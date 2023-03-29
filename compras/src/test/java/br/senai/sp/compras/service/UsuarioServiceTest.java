@@ -17,6 +17,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import br.senai.sp.compras.exception.ErroAutenticacao;
 import br.senai.sp.compras.exception.RegraNegocioException;
 import br.senai.sp.compras.model.entity.Usuario;
+import br.senai.sp.compras.model.enums.Perfil;
 import br.senai.sp.compras.model.repository.UsuarioRepository;
 import br.senai.sp.compras.service.impl.UsuarioServiceImpl;
 
@@ -34,12 +35,51 @@ public class UsuarioServiceTest {
 	@MockBean
 	UsuarioRepository repository;
 	
+	@Test
+	public void deveSalvarUmUsuario() {
+		//cenário
+		Mockito.doNothing().when(service).validarEmail(Mockito.anyString());
+		Usuario usuario = Usuario.builder()
+					.id(1l)
+					.nome("nome")
+					.email("usuario@easyconsys.com")
+					.senha("senha")
+					.perfil(Perfil.ADMINISTRADOR)
+					.build();
+		
+		Mockito.when(repository.save(Mockito.any(Usuario.class))).thenReturn(usuario);
+		
+		//acao
+		Usuario usuarioSalvo = service.salvarUsuario(new Usuario());
+		
+		//verificao
+		Assertions.assertThat(usuarioSalvo).isNotNull();
+		Assertions.assertThat(usuarioSalvo.getId()).isEqualTo(1l);
+		Assertions.assertThat(usuarioSalvo.getNome()).isEqualTo("nome");
+		Assertions.assertThat(usuarioSalvo.getEmail()).isEqualTo("usuario@easyconsys.com");
+		Assertions.assertThat(usuarioSalvo.getSenha()).isEqualTo("senha");
+		Assertions.assertThat(usuarioSalvo.getPerfil()).isEqualTo(Perfil.ADMINISTRADOR);
+		
+	}
 	
+	@Test
+	public void naoDeveSalvarUmUsuarioComEmailJaCadastrado() {
+		//cenario
+		String email = "usuario@easyconsys.com";
+		Usuario usuario = Usuario.builder().email(email).build();
+		Mockito.doThrow(RegraNegocioException.class).when(service).validarEmail(email);
+		
+		//acao
+		org.junit.jupiter.api.Assertions
+			.assertThrows(RegraNegocioException.class, () -> service.salvarUsuario(usuario) ) ;
+		
+		//verificacao
+		Mockito.verify( repository, Mockito.never() ).save(usuario);
+	}
 	
-	
-	/*@Test
+	@Test
 	public void deveAutenticarUmUsuarioComSucesso() {
-		///cenário
+		//cenário
 		String email = "usuario@easyconsys.com";
 		String senha = "senha";
 		
@@ -51,7 +91,8 @@ public class UsuarioServiceTest {
 		
 		//verificacao
 		Assertions.assertThat(result).isNotNull();
-	}*/
+		
+	}
 	
 	@Test
 	public void deveLancarErroQUandoNaoEncontrarUsuarioCadastradoComOEmailInformado() {
@@ -64,44 +105,40 @@ public class UsuarioServiceTest {
 		
 		//verificacao
 		Assertions.assertThat(exception)
-			.isInstanceOf(ErroAutenticacao.class) 
-			.hasMessage("Usuario não encontrado para o email informado.");
+			.isInstanceOf(ErroAutenticacao.class)
+			.hasMessage("Usuário não encontrado para o email informado.");
 	}
 	
 	@Test
 	public void deveLancarErroQuandoSenhaNaoBater() {
-		//cenario 
+		//cenario
 		String senha = "senha";
 		Usuario usuario = Usuario.builder().email("usuario@easyconsys.com").senha(senha).build();
 		Mockito.when(repository.findByEmail(Mockito.anyString())).thenReturn(Optional.of(usuario));
 		
 		//acao
- 		Assertions.assertThat(exception).isInstanceOf(ErroAutenticacao.class).hasMessage("Senha invalida");
-
+		Throwable exception = Assertions.catchThrowable( () ->  service.autenticar("usuario@easyconsys.com", "123") );
+		Assertions.assertThat(exception).isInstanceOf(ErroAutenticacao.class).hasMessage("Senha inválida.");
+		
 	}
 	
 	@Test
-	public void deveValidaEmail() {
-		
+	public void deveValidarEmail() {
 		// cenario
 		Mockito.when(repository.existsByEmail(Mockito.anyString())).thenReturn(false);
 		
-		// acao
+		//acao
 		service.validarEmail("usuario@easyconsys.com");
-		
-		
 	}
 	
 	@Test
 	public void deveLancarErroAoValidarEmailQuandoExistirEmailCadastrado() {
-		// cenario
+		//cenario
 		Mockito.when(repository.existsByEmail(Mockito.anyString())).thenReturn(true);
 		
-		//ação
+		//acao
 		org.junit.jupiter.api.Assertions
-		.assertThrows(RegraNegocioException.class, () -> service.validarEmail("usuario@easyconsys.com"));
-		
-		
+			.assertThrows(RegraNegocioException.class, () -> service.validarEmail("usuario@easyconsys.com"));
 	}
 
 }
