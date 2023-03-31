@@ -1,14 +1,13 @@
 package br.senai.sp.compras.api.resource;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.senai.sp.compras.api.dto.LoginDTO;
 import br.senai.sp.compras.api.dto.UsuarioDTO;
 import br.senai.sp.compras.exception.ErroAutenticacao;
 import br.senai.sp.compras.exception.RegraNegocioException;
@@ -24,7 +23,7 @@ public class UsuarioResource {
 	private final UsuarioService service;
 	
 	@PostMapping("/autenticar")
-	public ResponseEntity autenticar( @RequestBody UsuarioDTO dto ) {
+	public ResponseEntity autenticar( @RequestBody LoginDTO dto ) {
 		try {
 			Usuario usuarioAutenticado = service.autenticar(dto.getEmail(), dto.getSenha());
 			return ResponseEntity.ok(usuarioAutenticado);

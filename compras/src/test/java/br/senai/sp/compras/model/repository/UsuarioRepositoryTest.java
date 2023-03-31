@@ -97,7 +97,7 @@ public class UsuarioRepositoryTest {
 				.nome("usuario")
 				.email("usuario@easyconsys.com")
 				.senha("senha")
-				.perfil(Perfil.ADMINISTRADOR)
+				.perfil(null)
 				.build();
 	}
 }
