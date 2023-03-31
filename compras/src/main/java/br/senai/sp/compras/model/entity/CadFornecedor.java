@@ -1,7 +1,16 @@
 package br.senai.sp.compras.model.entity;
 
+import java.time.LocalDate;
+
+import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
+
+import br.senai.sp.compras.model.enums.StatusCadFornecedor;
+import br.senai.sp.compras.model.enums.TipoPessoa;
 import jakarta.persistence.Column;
+import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -24,7 +33,7 @@ public class CadFornecedor {
 	private String nome;
 	
 	@Column(name = "cep")
-	private String cep ;
+	private Integer cep ;
 	
 	@Column(name = "bairro")
 	private String bairro;
@@ -36,20 +45,27 @@ public class CadFornecedor {
 	private String complemento;
 	
 	@Column(name = "numero")
-	private String numero;
+	private Integer numero;
 	
 	@Column(name = "email")
 	private String email;
 	
 	@Column(name = "telefone")
-	private Long telefone;
+	private Integer telefone;
+	
+	@Column(name = "data_cadastro")
+	@Convert(converter = Jsr310JpaConverters.LocalDateConverter.class)
+	private LocalDate dataCadastro;
 	
 	@Column(name = "cpf_Cnpj")
 	private String cpf_Cnpj; // Cpf OU Cnpj
 	
 	@Column(name = "tipoPessoa") // Pode ser Pessoa fisica ou Juridica
-	private String tipoPessoa;
+	@Enumerated(value = EnumType.STRING)
+	private TipoPessoa tipoPssoa;
 	
-	
+	@Column(name = "status")
+	@Enumerated(value = EnumType.STRING)
+	private StatusCadFornecedor status;
 	
 }
