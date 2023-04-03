@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
+import br.senai.sp.compras.model.enums.Perfil;
 import br.senai.sp.compras.model.enums.StatusCadFornecedor;
 import br.senai.sp.compras.model.enums.TipoPessoa;
 import jakarta.persistence.Column;
@@ -15,13 +16,17 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Builder
 @Table(name = "CadFornecedores")
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class CadFornecedor {
 
 	@Id
@@ -33,7 +38,10 @@ public class CadFornecedor {
 	private String nome;
 	
 	@Column(name = "cep")
-	private Integer cep ;
+	private String cep ;
+	
+	@Column(name = "cidade")
+	private String cidade ;
 	
 	@Column(name = "bairro")
 	private String bairro;
@@ -51,7 +59,7 @@ public class CadFornecedor {
 	private String email;
 	
 	@Column(name = "telefone")
-	private Integer telefone;
+	private String telefone;
 	
 	@Column(name = "data_cadastro")
 	@Convert(converter = Jsr310JpaConverters.LocalDateConverter.class)
@@ -62,7 +70,7 @@ public class CadFornecedor {
 	
 	@Column(name = "tipoPessoa") // Pode ser Pessoa fisica ou Juridica
 	@Enumerated(value = EnumType.STRING)
-	private TipoPessoa tipoPssoa;
+	private TipoPessoa tipo;
 	
 	@Column(name = "status")
 	@Enumerated(value = EnumType.STRING)

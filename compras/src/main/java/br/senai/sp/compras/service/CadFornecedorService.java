@@ -21,6 +21,8 @@ public interface CadFornecedorService {
 	void validar(CadFornecedor cadFornecedor);
 
 	Optional<CadFornecedor> obterPorId(Long id);
+	
+	boolean  validarTelefone(String telefone);
 
 
 
