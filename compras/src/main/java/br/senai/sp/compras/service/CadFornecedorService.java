@@ -22,7 +22,7 @@ public interface CadFornecedorService {
 
 	Optional<CadFornecedor> obterPorId(Long id);
 	
-	boolean  validarTelefone(String telefone);
+	
 
 
 

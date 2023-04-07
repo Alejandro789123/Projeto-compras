@@ -19,7 +19,7 @@ public class CadFornecedorDTO {
 	private String bairro;
 	private String endereço;
 	private String complemento;
-	private Integer numero;
+	private String numero;
 	private String email;
 	private String telefone;
 	private String cpf_Cnpj;

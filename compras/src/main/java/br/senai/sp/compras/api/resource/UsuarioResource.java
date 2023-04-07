@@ -20,22 +20,15 @@ import br.senai.sp.compras.service.UsuarioService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("api/usuarios")
+@RequestMapping("/api/usuarios")
 @RequiredArgsConstructor
 public class UsuarioResource {
 
 	private final UsuarioService service;
 	
-	
-     @GetMapping("{id}")
-		public ResponseEntity obterFornecedor( @PathVariable("id") Long id ) {
-			return service.obterPorId(id)
-						.map( usuario -> new ResponseEntity(converter(usuario), HttpStatus.OK) )
-						.orElseGet( () -> new ResponseEntity(HttpStatus.NOT_FOUND) );
-		}
 	 
 	@PostMapping("/autenticar")
-	public ResponseEntity autenticar( @RequestBody LoginDTO dto ) {
+	public ResponseEntity<?> autenticar( @RequestBody LoginDTO dto ) {
 		try {
 			Usuario usuarioAutenticado = service.autenticar(dto.getEmail(), dto.getSenha());
 			return ResponseEntity.ok(usuarioAutenticado);
@@ -63,16 +56,5 @@ public class UsuarioResource {
 		
 	}
 	
-	
-	private UsuarioDTO converter(Usuario usuario) {
-		return UsuarioDTO.builder()
-					.id(usuario.getId())
-					.email(usuario.getEmail())
-					.nome(usuario.getNome())
-					.senha(usuario.getSenha())
-					.perfil(usuario.getPerfil())
-					.build();
-					
-	}
 	
 }
