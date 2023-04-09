@@ -17,11 +17,11 @@ import br.senai.sp.compras.model.repository.CadFornecedorRepository;
 import br.senai.sp.compras.service.CadFornecedorService;
 
 @Service
-public class CadFornecedorImpl implements CadFornecedorService{
+public class CadFornecedorServiceImpl implements CadFornecedorService{
 
 	private CadFornecedorRepository repository;
 	
-	public CadFornecedorImpl(CadFornecedorRepository repository) {
+	public CadFornecedorServiceImpl(CadFornecedorRepository repository) {
 		this.repository = repository;
 	}
 	
@@ -29,6 +29,7 @@ public class CadFornecedorImpl implements CadFornecedorService{
 	@Transactional
 	public CadFornecedor salvar(CadFornecedor cadFornecedor) {
 		validar(cadFornecedor);
+		validarEmail(cadFornecedor.getEmail());
 		cadFornecedor.setStatus(StatusCadFornecedor.PENDENTE);
 		return repository.save(cadFornecedor);
 	}
@@ -55,8 +56,8 @@ public class CadFornecedorImpl implements CadFornecedorService{
 
 	@Override
 	@Transactional(readOnly = true)
-	public List<CadFornecedor> buscar(CadFornecedor cadFornecedorFiltro) {
-		Example example = Example.of( cadFornecedorFiltro, 
+	public List<CadFornecedor> buscar(CadFornecedor cadFornecedor) {
+		Example example = Example.of( cadFornecedor, 
 				ExampleMatcher.matching()
 					.withIgnoreCase()
 					.withStringMatcher(StringMatcher.CONTAINING) );
@@ -99,7 +100,7 @@ public class CadFornecedorImpl implements CadFornecedorService{
 			throw new RegraNegocioException("Informe o Cpf ou Cnpj válido.");
 		}
 		if(cadFornecedor.getTipo() == null) {
-			throw new RegraNegocioException("Informe um tipo de Pessoa.");
+			throw new RegraNegocioException("Informe um tipo de Pessoa válida.");
 		}
 	}
 			
@@ -107,6 +108,15 @@ public class CadFornecedorImpl implements CadFornecedorService{
 	@Override
 	public Optional<CadFornecedor> obterPorId(Long id) {
 		return repository.findById(id);
+	}
+
+	@Override
+	public void validarEmail(String email) {
+		boolean existe = repository.existsByEmail(email);
+		if(existe) {
+			throw new RegraNegocioException("Já existe um usuário cadastrado com este email.");
+		}
+		
 	}
 
 

@@ -14,7 +14,7 @@ public interface CadFornecedorService {
 
 	void deletar(CadFornecedor cadFornecedor);
 
-	List<CadFornecedor> buscar(CadFornecedor cadFornecedorFiltro);
+	List<CadFornecedor> buscar(CadFornecedor cadFornecedor);
 	
 	void atualizarStatus(CadFornecedor cadFornecedor, StatusCadFornecedor status);
 
@@ -22,8 +22,6 @@ public interface CadFornecedorService {
 
 	Optional<CadFornecedor> obterPorId(Long id);
 	
-	
-
-
+	void validarEmail(String email);
 
 }

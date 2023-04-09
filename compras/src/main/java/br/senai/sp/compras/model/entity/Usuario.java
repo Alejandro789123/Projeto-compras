@@ -1,5 +1,7 @@
 package br.senai.sp.compras.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import br.senai.sp.compras.model.enums.Perfil;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -34,6 +36,7 @@ public class Usuario {
 	private String email;
 	
 	@Column(name = "senha")
+	@JsonIgnore
 	private String senha;
 	
 	@Column(name = "perfil")

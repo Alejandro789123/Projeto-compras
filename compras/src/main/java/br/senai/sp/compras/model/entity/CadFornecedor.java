@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
-import br.senai.sp.compras.model.enums.Perfil;
+
 import br.senai.sp.compras.model.enums.StatusCadFornecedor;
 import br.senai.sp.compras.model.enums.TipoPessoa;
 import jakarta.persistence.Column;
@@ -74,13 +74,14 @@ public class CadFornecedor {
 	@Column(name = "status")
 	@Enumerated(value = EnumType.STRING)
 	private StatusCadFornecedor status;
+	
 
 	public void setCep(String cep) {
 		this.cep = cep.replace("\\.", "").replace("-", "");
 	}
 
 	public String getCep() {
-		return this.cep.replace("\\.", "").replace("-", "");
+		return this.cep;
 	}
 	
 	public void setTelefone(String telefone) {
@@ -88,15 +89,16 @@ public class CadFornecedor {
 	}
 
 	public String getTelefone() {
-		return this.telefone.replace("-", "").replace("-", "");
+		return this.telefone;
 	}
 	
 	public void setCpf_Cnpj(String cpf_Cnpj) {
 		this.cpf_Cnpj = cpf_Cnpj.replaceAll("\\.", "").replaceAll("-", "").replaceAll("/", "");
 	}
 	
-	public String getCpf_Cnpj(String cpf_Cnpj) {
-		return this.cpf_Cnpj.replaceAll("\\.", "").replaceAll("-", "").replaceAll("/", "");
+	public String getCpf_Cnpj() {
+		return this.cpf_Cnpj;
 	}
+	
 
 }

@@ -15,7 +15,7 @@ public class LoginDAO {
 	 @Autowired
 	    private JdbcTemplate jdbcTemplate;
 	
-	public List<Login> ListarTodos(){
+	public List<Login> ListarTodos(){ 
 		String sql = "SELECT * FROM login";
         
 		List<Login> lista = jdbcTemplate.query(sql, 
