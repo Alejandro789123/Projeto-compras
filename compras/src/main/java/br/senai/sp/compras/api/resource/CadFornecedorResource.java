@@ -50,7 +50,14 @@ public class CadFornecedorResource {
 		List<CadFornecedor> fornecedores = service.buscar(cadFornecedor);
 		return ResponseEntity.ok(fornecedores);
 	}
-
+	
+	@GetMapping("{id}")
+	public ResponseEntity obterFornecedor(@PathVariable("id") Long id){
+		return service.obterPorId(id)
+				.map( fornecedor -> new ResponseEntity(converter(fornecedor), HttpStatus.OK) )
+				.orElseGet(() -> new ResponseEntity(HttpStatus.NOT_FOUND));
+	}    
+	
 	@PostMapping
 	public ResponseEntity salvar(@RequestBody CadFornecedorDTO dto) {
 		try {
@@ -104,30 +111,48 @@ public class CadFornecedorResource {
 	  }).orElseGet( () -> 
 	  new ResponseEntity("Fornecedor não encontrado na base de Dados.",HttpStatus.BAD_REQUEST) ); } 
 
-	
-
+	   
+	private CadFornecedorDTO converter(CadFornecedor fornecedor){
+		return CadFornecedorDTO.builder()
+				.id(fornecedor.getId())
+				.nome(fornecedor.getNome())
+				.cep(fornecedor.getCep())
+				.cidade(fornecedor.getCidade())
+				.bairro(fornecedor.getBairro())
+				.endereco(fornecedor.getEndereco())
+				.complemento(fornecedor.getComplemento())
+				.numero(fornecedor.getNumero())
+				.email(fornecedor.getEmail())
+				.telefone(fornecedor.getTelefone())
+				.cpf_Cnpj(fornecedor.getCpf_Cnpj())
+				.tipo(fornecedor.getTipo().name())
+				.status(fornecedor.getStatus().name())
+				.build();
+				
+} 
+	 
 	private CadFornecedor converter(CadFornecedorDTO dto) {
-		CadFornecedor forncedor = new CadFornecedor();
-		forncedor.setId(dto.getId());
-		forncedor.setNome(dto.getNome());
-		forncedor.setCep(dto.getCep());
-		forncedor.setCidade(dto.getCidade());
-		forncedor.setBairro(dto.getBairro());
-		forncedor.setEndereço(dto.getEndereço());
-		forncedor.setComplemento(dto.getComplemento());
-		forncedor.setNumero(dto.getNumero());
-		forncedor.setEmail(dto.getEmail());
-		forncedor.setTelefone(dto.getTelefone());
-		forncedor.setCpf_Cnpj(dto.getCpf_Cnpj());
+		CadFornecedor fornecedor = new CadFornecedor();
+		fornecedor.setId(dto.getId());
+		fornecedor.setNome(dto.getNome());
+		fornecedor.setCep(dto.getCep());
+		fornecedor.setCidade(dto.getCidade());
+		fornecedor.setBairro(dto.getBairro());
+		fornecedor.setEndereco(dto.getEndereco());
+		fornecedor.setComplemento(dto.getComplemento());
+		fornecedor.setNumero(dto.getNumero());
+		fornecedor.setEmail(dto.getEmail());
+		fornecedor.setTelefone(dto.getTelefone());
+		fornecedor.setCpf_Cnpj(dto.getCpf_Cnpj());
 
 		if (dto.getTipo() != null) {
-			forncedor.setTipo(TipoPessoa.valueOf(dto.getTipo()));
+			fornecedor.setTipo(TipoPessoa.valueOf(dto.getTipo()));
 		}
 
 		if (dto.getStatus() != null) {
-			forncedor.setStatus(StatusCadFornecedor.valueOf(dto.getStatus()));
+			fornecedor.setStatus(StatusCadFornecedor.valueOf(dto.getStatus()));
 		}
 
-		return forncedor;
+		return fornecedor;
 	}
 }

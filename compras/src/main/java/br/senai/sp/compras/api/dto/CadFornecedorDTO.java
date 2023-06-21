@@ -17,7 +17,7 @@ public class CadFornecedorDTO {
 	private String cep ;
 	private String cidade ;
 	private String bairro;
-	private String endereço;
+	private String endereco;
 	private String complemento;
 	private String numero;
 	private String email;

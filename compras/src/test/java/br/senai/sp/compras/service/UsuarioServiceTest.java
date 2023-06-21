@@ -1,8 +1,5 @@
 package br.senai.sp.compras.service;
 
-
-
-
 import java.util.Optional;
 
 import org.assertj.core.api.Assertions;
@@ -26,14 +23,28 @@ import br.senai.sp.compras.service.impl.UsuarioServiceImpl;
 @ActiveProfiles("test")
 public class UsuarioServiceTest {
 
-
-
-	
 	@SpyBean
 	UsuarioServiceImpl service;
 	
 	@MockBean
 	UsuarioRepository repository;
+	
+	
+	
+	@Test
+	public void naoDeveSalvarUmUsuarioComEmailJaCadastrado() {
+		//cenario
+		String email = "usuario@easyconsys.com";
+		Usuario usuario = Usuario.builder().email(email).build();
+		Mockito.doThrow(RegraNegocioException.class).when(service).validarEmail(email);
+		
+		//acao
+		org.junit.jupiter.api.Assertions
+			.assertThrows(RegraNegocioException.class, () -> service.salvarUsuario(usuario) ) ;
+		
+		//verificacao
+		Mockito.verify( repository, Mockito.never() ).save(usuario);
+	}
 	
 	@Test
 	public void deveSalvarUmUsuario() {
@@ -50,7 +61,7 @@ public class UsuarioServiceTest {
 		Mockito.when(repository.save(Mockito.any(Usuario.class))).thenReturn(usuario);
 		
 		//acao
-		Usuario usuarioSalvo = service.salvarUsuario(new Usuario());
+		Usuario usuarioSalvo = service.salvarUsuario(usuario); //new Usuario() 
 		
 		//verificao
 		Assertions.assertThat(usuarioSalvo).isNotNull();
@@ -60,21 +71,6 @@ public class UsuarioServiceTest {
 		Assertions.assertThat(usuarioSalvo.getSenha()).isEqualTo("senha");
 		Assertions.assertThat(usuarioSalvo.getPerfil()).isEqualTo(Perfil.ADMINISTRADOR);
 		
-	}
-	
-	@Test
-	public void naoDeveSalvarUmUsuarioComEmailJaCadastrado() {
-		//cenario
-		String email = "usuario@easyconsys.com";
-		Usuario usuario = Usuario.builder().email(email).build();
-		Mockito.doThrow(RegraNegocioException.class).when(service).validarEmail(email);
-		
-		//acao
-		org.junit.jupiter.api.Assertions
-			.assertThrows(RegraNegocioException.class, () -> service.salvarUsuario(usuario) ) ;
-		
-		//verificacao
-		Mockito.verify( repository, Mockito.never() ).save(usuario);
 	}
 	
 	@Test

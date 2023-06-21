@@ -81,7 +81,7 @@ public class CadFornecedorServiceImpl implements CadFornecedorService{
 		if(cadFornecedor.getBairro() == null || cadFornecedor.getBairro().trim().equals("")) {
 			throw new RegraNegocioException("Informe um Bairro válido.");
 		}
-		if(cadFornecedor.getEndereço() == null || cadFornecedor.getEndereço().trim().equals("")) {
+		if(cadFornecedor.getEndereco() == null || cadFornecedor.getEndereco().trim().equals("")) {
 			throw new RegraNegocioException("Informe o endereço válido.");
 		}
 		if(cadFornecedor.getComplemento() == null || cadFornecedor.getComplemento().trim().equals("")) {

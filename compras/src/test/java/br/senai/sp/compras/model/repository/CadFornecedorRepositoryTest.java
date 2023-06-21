@@ -91,7 +91,7 @@ public class CadFornecedorRepositoryTest {
 			.cep("")
 			.cidade("")
 			.bairro("")
-			.endereço("")
+			.endereco("")
 			.complemento("")
 			.numero("")
 			.email("alejandro@gmail.com")

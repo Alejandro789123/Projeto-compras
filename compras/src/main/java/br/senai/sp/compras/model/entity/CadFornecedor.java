@@ -2,9 +2,8 @@ package br.senai.sp.compras.model.entity;
 
 import java.time.LocalDate;
 
+
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
-
-
 import br.senai.sp.compras.model.enums.StatusCadFornecedor;
 import br.senai.sp.compras.model.enums.TipoPessoa;
 import jakarta.persistence.Column;
@@ -15,7 +14,6 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -46,7 +44,7 @@ public class CadFornecedor {
 	private String bairro;
 
 	@Column(name = "endereço")
-	private String endereço;
+	private String endereco;
 
 	@Column(name = "complemento")
 	private String complemento;
@@ -85,7 +83,7 @@ public class CadFornecedor {
 	}
 	
 	public void setTelefone(String telefone) {
-		this.telefone = telefone.replace("-", "");
+		this.telefone = telefone.replaceAll("-", ""); 
 	}
 
 	public String getTelefone() {

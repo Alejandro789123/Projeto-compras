@@ -3,7 +3,6 @@ package br.senai.sp.compras.service.impl;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.boot.web.error.ErrorAttributeOptions;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.domain.ExampleMatcher.StringMatcher;
@@ -20,6 +19,8 @@ import br.senai.sp.compras.service.UsuarioService;
 public class UsuarioServiceImpl implements UsuarioService{
 
 	private UsuarioRepository  repository;
+	
+
 	
 	public UsuarioServiceImpl(UsuarioRepository repository) {
 		super();
@@ -50,6 +51,8 @@ public class UsuarioServiceImpl implements UsuarioService{
 		validarEmail(usuario.getEmail());
 		return repository.save(usuario);
 	}
+	
+	
 
 	@Override
 	public void validarEmail(String email) {

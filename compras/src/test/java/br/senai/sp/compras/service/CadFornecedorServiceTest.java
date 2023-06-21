@@ -242,12 +242,12 @@ public class CadFornecedorServiceTest {
 		erro = Assertions.catchThrowable( () -> service.validar(fornecedor) );
 		assertThat(erro).isInstanceOf(RegraNegocioException.class).hasMessage("Informe o endereço válido.");
 		
-		fornecedor.setEndereço("");
+		fornecedor.setEndereco("");
 		
 		erro = Assertions.catchThrowable( () -> service.validar(fornecedor) );
 		assertThat(erro).isInstanceOf(RegraNegocioException.class).hasMessage("Informe o endereço válido.");
 		
-		fornecedor.setEndereço("rua luis stolb");
+		fornecedor.setEndereco("rua luis stolb");
 		
 		erro = Assertions.catchThrowable( () -> service.validar(fornecedor) );
 		assertThat(erro).isInstanceOf(RegraNegocioException.class).hasMessage("Informe um complemento válido.");
